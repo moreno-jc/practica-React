@@ -11,7 +11,7 @@ export function Header() {
     const [openMobileMenu, setOpenMobileMenu] = useState(false)
     return (
         <div>
-            <nav className="flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto md:py-8 bg-blue-900">
+            <nav className="flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto md:py-8">
                 <Link href="/" className="flex items-center">
                     <Image src="/assets/logo.png" width={150} height={40} alt="Logo Bank" />
                 </Link>
