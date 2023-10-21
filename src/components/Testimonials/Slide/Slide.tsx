@@ -1,7 +1,7 @@
 import 'swiper/css'
 import 'swiper/css/pagination'
 import Image from 'next/image'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { dataTestimonials } from '../Testimonials.data'
 import { Reveal } from '@/components/Reveal'
 import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules'
@@ -21,7 +21,7 @@ export function Slide() {
             }}
             freeMode={true}
             pagination={{
-                clickable: true
+                clickable: true,
             }}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             className="h-[250px] w-full md:max-w-5xl"
@@ -37,7 +37,7 @@ export function Slide() {
                             <Image src={image} alt={name} width="50" height={50} className="mr-5" />
                             <div>
                                 <h4 className="text-center">{name}</h4>
-                                <p className="text-primaryDark">{work}</p>
+                                <p className="text-white">{work}</p>
                             </div>
                         </div>
                     </Reveal>

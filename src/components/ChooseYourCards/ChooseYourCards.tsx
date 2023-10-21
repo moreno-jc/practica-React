@@ -1,4 +1,5 @@
 "use client"
+
 import 'swiper/css'
 import 'swiper/css/effect-cards'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,8 +16,8 @@ export function ChooseYourCards() {
             <BackgroundRadialRight />
             <div className="block max-w-5xl mx-auto md:grid md:grid-cols-2">
                 <Reveal>
-                    <h2 className="text-5xl font-semibold">Elige la tarjeta que más
-                        <span className="block degradedBlue bg-blueLight">se adapta a tus necesidades</span>
+                    <h2 className="text-5xl font-semibold my-4">Elige la tarjeta que más
+                        <span className="block  text-blue-400 my:4">se adapta a tus necesidades</span>
                     </h2>
                 </Reveal>
                 <div className="px-5">

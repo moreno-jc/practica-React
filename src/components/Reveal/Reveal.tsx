@@ -1,4 +1,5 @@
 "use client"
+
 import { useAnimation, useInView, motion } from "framer-motion"
 import { useEffect, useRef } from "react"
 
@@ -21,6 +22,7 @@ export function Reveal({ children }: { children: React.ReactNode }) {
 
     return (
         <div ref={ref} className="relative overflow-hidden w-fit">
+            
             <motion.div
                 variants={{
                     hidden: { opacity: 0, y: 75 },
@@ -29,7 +31,7 @@ export function Reveal({ children }: { children: React.ReactNode }) {
                 initial="hidden"
                 animate={mainControls}
                 exit="hidden"
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 0}}
             >
                 {children}
             </motion.div>
@@ -47,7 +49,7 @@ export function Reveal({ children }: { children: React.ReactNode }) {
                     bottom: 4,
                     left: 0,
                     right: 0,
-                    background: "#6DE4E8",
+                    background: "#6DE4E8" ,
                     zIndex: 20
                 }}
             >
